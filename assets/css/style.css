@@ -1,0 +1,159 @@
+/*Color targetas #E2E4E6*/
+
+
+
+*{
+	margin:0;
+	padding: 0;
+	color: #fff;
+}
+body, button, html, input, textarea {
+    color: #333;
+    font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	background: #026AA7;
+	padding: 5px 8px;
+	z-index: 10;
+	text-align: center;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+nav{
+	height: 60px;
+	width: 100%;
+	background: transparent;
+}
+body{
+	background-color: rgb(0, 121, 191); 
+}
+button{
+	background-color: rgb(0, 121, 191);
+	border: rgb(0, 121, 191);
+	border-radius: 5px;
+	color: #fff;
+	height: 30px;
+}
+
+.header-left, .header-logo, .header-user{
+	display: inline-block;
+	float: left;
+	margin: auto;
+	width: 30%;
+	height: 90%;
+	padding: 4px 5px 4px;
+	outline: 2px solid yellow;
+}
+/*-- Encabezado izquierdo --*/
+.header-logo{
+	width:25%;
+}
+.header-left{
+	width:40%;
+}
+.tableros, .buscador{
+	outline: 1px solid red;
+	height: 30px;
+	display: inline-block;
+	float: left;
+	padding: 4px 5px 5px 4px;
+	margin-top: 3px;
+	border:1px solid #026AA7; 
+	border-radius: 5px;
+}
+.tableros i{
+	text-decoration: none;
+	background-color: rgb(0, 121, 191);
+	border: rgb(0, 121, 191);
+	border-radius: 5px;
+	height: 30px;
+	margin: 5px;
+}
+
+.header-user{
+	float: right;
+	height: 90%;
+	margin-right: 0;
+}
+
+.header-btn{
+display: inline-block;
+height: inherit;
+}
+.header-btn:hover{
+	opacity: 0.8;
+}
+.header-btn button{
+	text-decoration: none;
+	background-color: rgb(0, 121, 191);
+	border: rgb(0, 121, 191);
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	color: #fff;
+}
+.header button i{
+	font-style: bold;
+	font-weight: 400px;
+	text-align: center;
+}
+.header-logo{
+background: url(..img/trello.png);
+background-repeat: no-repeat;
+}
+.header-logo:hover{
+	opacity: 0.8;
+}
+.fa-trello{
+	padding-top: 3%;
+}
+.fa-trello:after{
+	content: url(../img/trello.png);
+}
+
+#trello:after{
+	content: "Tableros";
+	padding-left: 5px;
+	color: #f3f3f3;
+	font-family: trellicons;;
+}
+ul{
+	list-style: none;
+}
+.guardar-btn, .x-btn{
+	padding: 4px;
+	margin-top: 0;
+	height: 30px;
+	min-height: 30px;
+}
+.guardar-btn{
+	background-color: #5AAC44;
+	box-shadow: 0 1px 0 #519839;
+
+}
+
+.x-btn{
+	background-color: #fff;
+	width: 30px;
+}
+.x-btn span{
+	color: #000;
+
+}
+/*-- Principal --*/
+.list-input{
+background-color:   #026AA7;
+border: #026AA7;
+width: 270px;
+height: 40px;
+border-radius: 5px;
+}
+.list-input:hover{
+	opacity: 0.8;
+
+}
