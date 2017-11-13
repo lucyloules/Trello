@@ -1,15 +1,12 @@
 /*Color targetas #E2E4E6*/
-
-
-
 *{
 	margin:0;
 	padding: 0;
 	color: #fff;
+	font: 16px 'Lato', sans-serif;
 }
 body, button, html, input, textarea {
     color: #333;
-    font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
     line-height: 18px;
     font-weight: 400;
 }
@@ -27,10 +24,11 @@ nav{
 	height: 60px;
 	width: 100%;
 	background: transparent;
+	font-family: 'Montserrat', sans-serif;
 }
 body{
 	background-color: rgb(0, 121, 191); 
-}
+	}
 button{
 	background-color: rgb(0, 121, 191);
 	border: rgb(0, 121, 191);
@@ -39,26 +37,14 @@ button{
 	height: 30px;
 }
 
-.header-left, .header-logo, .header-user{
-	display: inline-block;
-	float: left;
-	margin: auto;
-	width: 30%;
-	height: 90%;
-	padding: 4px 5px 4px;
-	outline: 2px solid yellow;
-}
 /*-- Encabezado izquierdo --*/
-.header-logo{
-	width:25%;
-}
 .header-left{
 	width:40%;
+	padding-left: 15px;
 }
 .tableros, .buscador{
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 	height: 30px;
-	display: inline-block;
 	float: left;
 	padding: 4px 5px 5px 4px;
 	margin-top: 3px;
@@ -78,11 +64,15 @@ button{
 	float: right;
 	height: 90%;
 	margin-right: 0;
+	margin: auto;
+	width: 30%;
+	height: 90%;
+	padding: 4px 5px 4px;
 }
 
 .header-btn{
-display: inline-block;
-height: inherit;
+	display: inline-block;
+	height: inherit;
 }
 .header-btn:hover{
 	opacity: 0.8;
@@ -102,58 +92,103 @@ height: inherit;
 	font-weight: 400px;
 	text-align: center;
 }
+/* -- Encabezado central-- */
 .header-logo{
-background: url(..img/trello.png);
-background-repeat: no-repeat;
+	background: #026AA7;
+	width: 15%;
+	padding-bottom: 1%;
+	float: left;
+	margin: auto;
+	height: 90%;
+	padding: 4px 5px 4px;
+	margin-left: 20%;
+	/* outline:1px solid red; */
+	
+}
+.logo{
+	margin-left: 10%;
+	margin: auto;
+	widows: 40px;
+	height: 40px;
+	background-image: url(../img/trello.svg);
+	background-size: contain;
+	background-repeat:no-repeat; 
+	/* outline:1px solid yellow; */
 }
 .header-logo:hover{
 	opacity: 0.8;
-}
-.fa-trello{
-	padding-top: 3%;
-}
-.fa-trello:after{
-	content: url(../img/trello.png);
 }
 
 #trello:after{
 	content: "Tableros";
 	padding-left: 5px;
 	color: #f3f3f3;
-	font-family: trellicons;;
+	font-family: trellicons;
 }
-ul{
-	list-style: none;
+nav i{
+	display: inline-block;
+	margin-left: 8px;
 }
-.guardar-btn, .x-btn{
+.menu{
+	float: right;
+	margin-right: 5%;
+	font-family: 'Montserrat', sans-serif;
+}
+.botonGuardarClass, .x-btn{
 	padding: 4px;
 	margin-top: 0;
 	height: 30px;
 	min-height: 30px;
 }
-.guardar-btn{
+.botonGuardarClass{
 	background-color: #5AAC44;
 	box-shadow: 0 1px 0 #519839;
 
 }
-
 .x-btn{
 	background-color: #fff;
 	width: 30px;
 }
-.x-btn span{
-	color: #000;
 
-}
 /*-- Principal --*/
-.list-input{
-background-color:   #026AA7;
-border: #026AA7;
-width: 270px;
-height: 40px;
-border-radius: 5px;
+.inputClass{
+	border-style: none;
+	text-decoration: none;
+	background:transparent;
+	color: #fff;
+	float: left;
+	margin: auto;
+	width: 270px;
+	height: 40px;
+	margin-left: 5px;
 }
-.list-input:hover{
-	opacity: 0.8;
 
+.listClass{
+	background-color:   #026AA7;
+	border: #026AA7;
+	color: #fff;
+	width: inherit;
+	height: inherit;
+	text-align: left;border-radius: 5px;
+	
 }
+.listClass:hover{
+	background-color: #005485;
+	color: #fff;
+}
+/* placeholder */
+::-webkit-input-placeholder { color: #AFCAD9; padding-left: 5px;} 
+
+:-moz-placeholder { /* Firefox 18- */ color: #AFCAD9; padding-left: 5px; } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: #AFCAD9; padding-left: 5px; } 
+
+:-ms-input-placeholder { color: #AFCAD9; padding-left: 5px;}
+/*  placeholder hover */
+::-webkit-input-placeholder:hover { color: #fff; padding-left: 5px;} 
+
+:-moz-placeholder:hover { /* Firefox 18- */ color: #fff; padding-left: 5px; } 
+
+::-moz-placeholder:hover { /* Firefox 19+ */ color: #fff; padding-left: 5px; } 
+
+:-ms-input-placeholder:hover { color: #fff; padding-left: 5px;}
